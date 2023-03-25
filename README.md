@@ -12,8 +12,8 @@ This app is consuming an API. You can look for an image and see the results
 
 ### Links
 
-- Solution URL: [https://github.com/veronicajujuy/cipboard-landing-page](https://github.com/veronicajujuy/cipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/veronicajujuy/cipboard-landing-page](https://github.com/veronicajujuy/buscador-imagenes)
+- Live Site URL: [Add live site URL here](https://buscador-imagenes-indol.vercel.app/)
 
 ## My process
 
