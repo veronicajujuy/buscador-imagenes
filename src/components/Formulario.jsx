@@ -3,8 +3,8 @@ import { useGlobalStates } from '../Context/GlobalContext'
 
 
 const Formulario = () => {
-    const {imagen, fetchImage} = useGlobalStates()
-    
+    const {fetchImage} = useGlobalStates()
+
     return (
      <div>
       <header>
@@ -15,13 +15,12 @@ const Formulario = () => {
           }
         >
           <Form>
+            <label>Busqueda: </label>
             <Field name="search" />
           </Form>
         </Formik>
       </header>
-      {imagen && imagen.map(item =>
-        <div key={item.id}>{item.id}</div>
-      )}
+      
      </div>
     )
 }

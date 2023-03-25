@@ -1,0 +1,8 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px;
+    justify-content: space-evenly;
+    background-color: #fff;
+}

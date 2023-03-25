@@ -4,6 +4,7 @@ export const GlobalState = createContext()
 
 const ImageContext = ({children}) => {
     const [imagen, setImagen] = useState([])
+    const [nodatos, setNoDatos] = useState("")
 
     const fetchImage = async values => {
         const response = await fetch(`https://api.unsplash.com/search/photos?per_page=20&query=${values.search}`, {
@@ -12,11 +13,14 @@ const ImageContext = ({children}) => {
           }
         })
         const data = await response.json()
+        if (data.results.length == 0) setNoDatos("No hay datos")
+        else {
+        setNoDatos("")}
         setImagen(data.results)
       }
 
     return (
-        <GlobalState.Provider value={{imagen, fetchImage}}>
+        <GlobalState.Provider value={{imagen, fetchImage, nodatos}}>
             {children}
         </GlobalState.Provider>
     )
